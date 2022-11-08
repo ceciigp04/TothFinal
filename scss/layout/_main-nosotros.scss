@@ -1,0 +1,21 @@
+.container-nosotros{
+    @include medidas (100%,100%,0);
+    background-color: $background-quienes-somos;
+
+    @include grid(1fr 1fr, 1fr 1fr 1fr);
+
+    div{
+        margin: 20px;
+        display: grid;
+        place-items: center;
+
+        img{
+            width: 80%;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+}

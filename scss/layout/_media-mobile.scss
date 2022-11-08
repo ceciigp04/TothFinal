@@ -1,0 +1,36 @@
+@media (max-width: 576px){
+
+    /**CELULAR-INICIO**/
+
+    .container-inicio{
+        font-size: 10px;
+        @include grid (1fr, 5fr 1fr 1fr 1fr);
+        grid-template-areas: 
+        "logo" 
+        "quienes-somos"
+        "fotos"
+        "clientes" 
+        "contacto"   
+
+    }
+
+    /**CELULAR- PHOTO**/
+
+    .container-photos{
+        font-size: 10px;
+        @include grid (1fr, 250px 100px 100px 100px);
+        grid-template-areas: 
+        "intro"
+        "ecommers"
+        "ambientadas"
+        "campañas"  
+    }
+
+    /**CELULAR-CONTACTO**/
+
+    .formulario1{
+        @include medidas (100%,100%,0);
+    }
+
+
+}

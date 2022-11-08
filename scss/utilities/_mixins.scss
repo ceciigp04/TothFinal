@@ -1,0 +1,24 @@
+@mixin prop-flex ($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;    
+}
+
+@mixin back-position ($center,$cover){
+    background-position: $center;
+    background-size: $cover;    
+}
+
+@mixin medidas ($ancho,$alto,$padding){ 
+    width:$ancho;
+    height:$alto;
+    padding:$padding;
+    
+}
+
+@mixin grid ($colums,$row) {
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $row;    
+}

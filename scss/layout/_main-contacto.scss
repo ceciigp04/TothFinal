@@ -1,0 +1,4 @@
+.formulario1{
+    @include medidas (100%,100vh,50px);
+    background-color: $background-contacto;
+}

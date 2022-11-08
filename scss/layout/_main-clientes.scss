@@ -1,0 +1,4 @@
+.cliente{
+    @include medidas(100%,100vh,0);
+    background-color: $background-clientes;    
+}

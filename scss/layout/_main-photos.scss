@@ -1,0 +1,57 @@
+.container-photos{
+    @include medidas (100%,100vh,0);
+    @include grid (2fr 1fr, 1fr 1fr 1fr);
+
+    grid-template-areas: 
+    "intro ecommers"
+    "intro ambientadas"
+    "intro campañas"      
+    ;
+}
+
+.intro{
+    grid-area: intro;
+    background-color: $background-photos;
+    p{
+        @include medidas (300px,300px,0);
+        font-size: 30px;
+    }
+}
+
+.ecommers{
+    grid-area: ecommers;
+    background-image: url(./../assets/img/ecommers1.JPG);
+    @include back-position (center, cover);
+}
+
+.ambientadas{
+    grid-area: ambientadas;
+    background-image: url(./../assets/img/ambientadas.jpg);
+    @include back-position (center, cover);
+}
+
+.campañas{
+    grid-area: campañas;
+    background-image: url(./../assets/img/campañas1.jpg);
+    @include back-position (center, cover);
+}
+
+.container-photos > div{
+    display: grid;
+    place-items: center;
+}
+
+.container-photos a{
+    width: 200px;
+    border: solid 3px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    @include prop-flex (row,center,center);
+}
+
+.container-photos a:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.568);
+}

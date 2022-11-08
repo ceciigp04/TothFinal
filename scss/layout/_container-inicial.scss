@@ -1,0 +1,74 @@
+.container-inicio{
+    display: grid;
+    @include medidas (100%,100vh,0);
+    @include grid (repeat(4, 1fr), 3fr 1fr);
+
+    grid-template-areas:
+        "logo logo logo logo"
+        "quienes-somos fotos clientes contacto"
+    ;
+}
+
+.logo{
+    grid-area: logo;
+    @include prop-flex (row,center,center);
+
+    background-image: url(./../assets/img/portada.jpg);
+    @include back-position (center, cover);
+
+}
+
+.logo-items{
+    display: flex;
+    padding: 20px;
+
+    a{
+        padding: 20px;
+    }
+}
+
+
+.quienes-somos{
+    grid-area: quienes-somos;
+    background-color: $background-quienes-somos;
+    border-radius: 20px;
+}
+
+.fotos{
+    grid-area: fotos;
+    background-color: $background-photos;
+    border-radius: 20px;
+}
+
+.clientes{
+    grid-area: clientes;
+    background-color: $background-clientes;
+    border-radius: 20px;
+}
+
+.contacto{
+    grid-area: contacto;
+    background-color: $background-contacto;
+    border-radius: 20px;
+}
+
+.container-inicio >div{
+
+   @include prop-flex (column,center,center);
+
+   img{
+    @include medidas(50px,50px,10px);
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        @include prop-flex (row,center,center);
+    }
+}
+
+.container-inicio a:hover{
+    color: white;
+    font-size: 30px;
+    transition: 0.4s;
+}

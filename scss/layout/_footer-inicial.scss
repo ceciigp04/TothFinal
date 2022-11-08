@@ -1,0 +1,8 @@
+.pie-de-pagina{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.644);
+    background-color: rgba(0, 172, 181, 0.432);
+    padding: 10px;
+    @include prop-flex (row,center,center);
+  
+    }

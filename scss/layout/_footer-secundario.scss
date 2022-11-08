@@ -1,0 +1,16 @@
+.pie-de-pagina-2{
+    @include medidas (100%,100px,0);
+
+    @include prop-flex (row,center,center);
+    background-color: $background-clientes;
+    
+    img{
+        @include medidas (20px,20px,0);
+    }
+    a{
+        padding: 30px;
+    }
+
+}
+
+

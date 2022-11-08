@@ -1,0 +1,38 @@
+@media (max-width: 768px){
+
+
+    /**TABLET-INICIO**/
+
+
+
+    .container-inicio{
+        @include grid (repeat(4,1fr), 1fr 1fr);
+        grid-template-areas: 
+        "logo logo quienes-somos fotos"
+        "logo logo clientes contacto"
+        ;
+    }
+    
+
+    /**TABLET-PHOTO**/
+
+    .container-photos{
+        @include grid (1fr 1fr 1fr, 2fr 1fr);
+        grid-template-areas: 
+
+        "intro intro intro"
+        "ecommers ambientadas campañas"        
+        ;
+    }
+
+    /**TABLET-NAV**/
+
+    .navbar{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: right;
+    }
+    
+
+}

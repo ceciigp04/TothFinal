@@ -21,7 +21,7 @@
     grid-area: logo;
     @include prop-flex (row,center,center);
 
-    background-image: url(../../assets/img/portada2.jpg);
+    background-image: url(../assets/img/portada3.jpg);
     @include back-position (center, cover);
 
     h1{

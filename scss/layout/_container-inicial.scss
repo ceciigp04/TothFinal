@@ -10,10 +10,10 @@
 }
 
 .H{
-    width: 30%;
+    width: 40%;
     height: 1px;
     border: 0 none;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.747);
 
 }
 
@@ -26,7 +26,11 @@
 
     h1{
         font-family: $fontCorintia;
-        font-size: 70px;
+        font-size: 65px;
+        color: rgba(0, 0, 0, 0.747);
+    }
+    h2{
+        color: rgba(0, 0, 0, 0.747);
     }
 
 }

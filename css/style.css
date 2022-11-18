@@ -18,10 +18,10 @@
   grid-template-areas: "logo logo logo logo" "quienes-somos fotos clientes contacto"; }
 
 .H {
-  width: 30%;
+  width: 40%;
   height: 1px;
   border: 0 none;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.747); }
 
 .logo {
   grid-area: logo;
@@ -34,7 +34,10 @@
   background-size: cover; }
   .logo h1 {
     font-family: "Corinthia", cursive;
-    font-size: 70px; }
+    font-size: 65px;
+    color: rgba(0, 0, 0, 0.747); }
+  .logo h2 {
+    color: rgba(0, 0, 0, 0.747); }
 
 .logo-items {
   display: flex;

@@ -12,8 +12,10 @@
 .intro{
     grid-area: intro;
     background-color: $background-photos;
+
     p{
-        @include medidas (300px,300px,0);
+        @include prop-flex(row,center,center);
+        @include medidas (600px,400px,0px);
         font-size: 30px;
     }
 }

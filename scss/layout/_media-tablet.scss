@@ -12,6 +12,17 @@
         "logo logo clientes contacto"
         ;
     }
+
+    .container-inicio >div a{
+
+        @include prop-flex (column,center,center);
+
+        }
+
+    /**TABLET-NOSOTROS**/
+    .container-nosotros{
+        @include prop-flex (column,center,center);
+    }    
     
 
     /**TABLET-PHOTO**/

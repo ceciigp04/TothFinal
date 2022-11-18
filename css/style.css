@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +14,14 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: 5fr 1fr;
   grid-template-areas: "logo logo logo logo" "quienes-somos fotos clientes contacto"; }
+
+.H {
+  width: 30%;
+  height: 1px;
+  border: 0 none;
+  background-color: black; }
 
 .logo {
   grid-area: logo;
@@ -22,9 +29,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url(./../assets/img/portada.jpg);
+  background-image: url(../../assets/img/portada2.jpg);
   background-position: center;
   background-size: cover; }
+  .logo h1 {
+    font-family: "Corinthia", cursive;
+    font-size: 70px; }
 
 .logo-items {
   display: flex;
@@ -34,23 +44,27 @@
 
 .quienes-somos {
   grid-area: quienes-somos;
-  background-color: rgba(58, 71, 80, 0.493);
-  border-radius: 20px; }
+  background-color: #c7d3dd;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px black; }
 
 .fotos {
   grid-area: fotos;
-  background-color: #eeeeee;
-  border-radius: 20px; }
+  background-color: #e0e9ee;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px black; }
 
 .clientes {
   grid-area: clientes;
-  background-color: rgba(0, 172, 181, 0.479);
-  border-radius: 20px; }
+  background-color: #c7d3dd;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px black; }
 
 .contacto {
   grid-area: contacto;
-  background-color: rgba(58, 71, 80, 0.438);
-  border-radius: 20px; }
+  background-color: #e0e9ee;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px black; }
 
 .container-inicio > div {
   display: flex;
@@ -64,7 +78,7 @@
   .container-inicio > div a {
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -72,18 +86,19 @@
 
 .container-inicio a:hover {
   color: white;
-  font-size: 30px;
-  transition: 0.4s; }
+  font-size: 25px;
+  transition: 0.6s; }
 
 .pie-de-pagina {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.644);
-  background-color: rgba(0, 172, 181, 0.432);
+  color: rgba(141, 138, 138, 0.644);
+  background-color: #e0e9ee;
   padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+  .pie-de-pagina h3 {
+    font-size: 15px; }
 
 .navbar {
   width: 100%;
@@ -108,36 +123,46 @@
   align-items: center; }
 
 li:nth-child(5n + 1) {
-  background-color: #dbdada; }
+  background-color: #e0e9ee; }
 
 li:nth-child(5n + 2) {
-  background-color: rgba(58, 71, 80, 0.493); }
+  background-color: #c7d3dd; }
 
 li:nth-child(5n + 3) {
-  background-color: #eeeeee; }
+  background-color: #e0e9ee; }
 
 li:nth-child(5n + 4) {
-  background-color: rgba(0, 172, 181, 0.479); }
+  background-color: #c7d3dd; }
 
 li:nth-child(5n + 5) {
-  background-color: rgba(58, 71, 80, 0.438); }
+  background-color: #e0e9ee; }
 
-.container-nosotros {
+.main-nosotros {
   width: 100%;
   height: 100%;
   padding: 0;
-  background-color: rgba(58, 71, 80, 0.493);
+  background-color: #c7d3dd;
+  padding: 30px; }
+  .main-nosotros h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; }
+
+.container-nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr; }
-  .container-nosotros div {
-    margin: 20px;
-    display: grid;
-    place-items: center; }
-    .container-nosotros div img {
-      width: 80%; }
-    .container-nosotros div p {
-      font-size: 20px; }
+  grid-template-rows: 1fr 1fr; }
+  .container-nosotros img {
+    width: 80%;
+    padding: 20px; }
+  .container-nosotros p {
+    width: 600px;
+    height: 500px;
+    padding: 0px;
+    font-size: 20px;
+    padding: 30px; }
 
 .pie-de-pagina-2 {
   width: 100%;
@@ -147,13 +172,19 @@ li:nth-child(5n + 5) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 172, 181, 0.479); }
+  background-color: #c7d3dd; }
+  .pie-de-pagina-2 h4 {
+    font-size: 20px; }
   .pie-de-pagina-2 img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     padding: 0; }
   .pie-de-pagina-2 a {
-    padding: 30px; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px; }
 
 .container-photos {
   width: 100%;
@@ -166,11 +197,15 @@ li:nth-child(5n + 5) {
 
 .intro {
   grid-area: intro;
-  background-color: #eeeeee; }
+  background-color: #e0e9ee; }
   .intro p {
-    width: 300px;
-    height: 300px;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    padding: 0px;
     font-size: 30px; }
 
 .ecommers {
@@ -211,17 +246,47 @@ li:nth-child(5n + 5) {
   color: white;
   background-color: rgba(0, 0, 0, 0.568); }
 
-.cliente {
+.main-cliente {
   width: 100%;
-  height: 100vh;
-  padding: 0;
-  background-color: rgba(0, 172, 181, 0.479); }
+  height: 100%;
+  padding: 30px;
+  background-color: #c7d3dd; }
+  .main-cliente h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 30px; }
+
+.container-cliente {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.carta-cliente {
+  width: 400px;
+  height: 400px;
+  padding: 10px; }
+
+img {
+  width: 100%; }
+
+p {
+  padding: 10px; }
 
 .formulario1 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 50px;
-  background-color: rgba(58, 71, 80, 0.438); }
+  background-color: #e0e9ee; }
+  .formulario1 img {
+    width: 50px;
+    padding: 10px; }
 
 @media (max-width: 768px) {
   /**TABLET-INICIO**/
@@ -230,6 +295,17 @@ li:nth-child(5n + 5) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "logo logo quienes-somos fotos" "logo logo clientes contacto"; }
+  .container-inicio > div a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  /**TABLET-NOSOTROS**/
+  .container-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   /**TABLET-PHOTO**/
   .container-photos {
     display: grid;
@@ -251,6 +327,12 @@ li:nth-child(5n + 5) {
     grid-template-columns: 1fr;
     grid-template-rows: 5fr 1fr 1fr 1fr;
     grid-template-areas: "logo"  "quienes-somos" "fotos" "clientes"  "contacto"; }
+  /**CELULAR- NOSOTROS**/
+  .container-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   /**CELULAR- PHOTO**/
   .container-photos {
     font-size: 10px;
@@ -258,6 +340,20 @@ li:nth-child(5n + 5) {
     grid-template-columns: 1fr;
     grid-template-rows: 250px 100px 100px 100px;
     grid-template-areas: "intro" "ecommers" "ambientadas" "campañas"; }
+    .container-photos p {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+  /**CELULAR-CLIENTES**/
+  .container-cliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; }
+  .carta-cliente img {
+    width: 80%; }
   /**CELULAR-CONTACTO**/
   .formulario1 {
     width: 100%;

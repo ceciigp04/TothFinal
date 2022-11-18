@@ -3,12 +3,18 @@
 
     @include prop-flex (row,center,center);
     background-color: $background-clientes;
+
+    h4{
+        font-size: 20px;
+        
+    }
     
     img{
-        @include medidas (20px,20px,0);
+        @include medidas (25px,25px,0);
     }
     a{
-        padding: 30px;
+        @include prop-flex (row,center,center);
+        padding: 25px;
     }
 
 }

@@ -14,6 +14,11 @@
 
     }
 
+    /**CELULAR- NOSOTROS**/
+    .container-nosotros{
+        @include prop-flex (column,center,center);
+    }
+
     /**CELULAR- PHOTO**/
 
     .container-photos{
@@ -24,13 +29,30 @@
         "ecommers"
         "ambientadas"
         "campañas"  
+        ;
+
+        p{
+            @include prop-flex (row,center,center);
+        }
     }
+
+    /**CELULAR-CLIENTES**/
+.container-cliente{
+    @include prop-flex(column,center,center);
+    padding: 20px;
+}
+
+.carta-cliente{
+    img{
+        width: 80%;
+    };
+}
+
 
     /**CELULAR-CONTACTO**/
 
     .formulario1{
         @include medidas (100%,100%,0);
     }
-
 
 }

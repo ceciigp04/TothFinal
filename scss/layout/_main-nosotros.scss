@@ -1,21 +1,29 @@
-.container-nosotros{
+.main-nosotros{
     @include medidas (100%,100%,0);
     background-color: $background-quienes-somos;
+    padding: 30px;
 
-    @include grid(1fr 1fr, 1fr 1fr 1fr);
+    h2{
+        @include prop-flex(row,center,center);
+        padding: 40px
+    }
+   
+}
 
-    div{
-        margin: 20px;
-        display: grid;
-        place-items: center;
+.container-nosotros{
+    @include grid (1fr 1fr,1fr 1fr);
 
-        img{
-            width: 80%;
-        }
+  
 
-        p{
-            font-size: 20px;
-        }
+    img{
+        width:80%;  
+        padding: 20px;
     }
 
+    p{
+     
+        @include medidas (600px,500px,0px);
+        font-size: 20px;
+        padding: 30px;
+    }
 }

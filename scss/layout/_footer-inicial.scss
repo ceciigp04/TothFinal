@@ -1,8 +1,11 @@
 .pie-de-pagina{
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.644);
-    background-color: rgba(0, 172, 181, 0.432);
+    color: rgba(141, 138, 138, 0.644);
+    background-color: $background-inicio;
     padding: 10px;
     @include prop-flex (row,center,center);
+
+    h3{
+        font-size: 15px;
+    }
   
     }

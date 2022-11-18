@@ -1,4 +1,37 @@
-.cliente{
-    @include medidas(100%,100vh,0);
-    background-color: $background-clientes;    
+.main-cliente{
+   
+    @include medidas(100%,100%,30px);
+    background-color: $background-clientes;
+
+    h2{
+        @include prop-flex (row,center,center);
+        padding: 30px;
+        font-size: 30px;
+    }
+    
 }
+
+.container-cliente{
+    @include medidas(100%,100%,0px);
+    @include prop-flex (row,center,center);  
+
+  
+}
+
+
+
+.carta-cliente{
+    @include medidas (400px,400px,10px);
+    }
+
+    img{
+        width:100%;
+   
+
+        
+    }
+
+    p{
+        padding: 10px;
+
+    }

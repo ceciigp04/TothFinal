@@ -1,4 +1,11 @@
 .formulario1{
-    @include medidas (100%,100vh,50px);
+    @include medidas (100%,100%,50px);
     background-color: $background-contacto;
+
+    img{
+        width: 50px;
+        padding: 10px;
+    }
 }
+
+
